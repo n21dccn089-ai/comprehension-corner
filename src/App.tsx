@@ -7,6 +7,10 @@ import Index from "./pages/Index";
 import Practice from "./pages/Practice";
 import Schedule from "./pages/Schedule";
 import Forum from "./pages/Forum";
+import ForumDetail from "./pages/ForumDetail";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
+import Courses from "./pages/Courses";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import ExamManagement from "./pages/admin/ExamManagement";
 import UserManagement from "./pages/admin/UserManagement";
@@ -27,6 +31,10 @@ const App = () => (
           <Route path="/practice" element={<Practice />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/forum" element={<Forum />} />
+          <Route path="/forum/:id" element={<ForumDetail />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
+          <Route path="/courses" element={<Courses />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/admin/exams" element={<ExamManagement />} />
           <Route path="/admin/users" element={<UserManagement />} />

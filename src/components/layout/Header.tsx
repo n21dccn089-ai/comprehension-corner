@@ -60,6 +60,30 @@ const Header = () => {
               <MessageSquare className="w-4 h-4" />
               <span>Forum</span>
             </Link>
+            
+            <Link
+              to="/blog"
+              className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-smooth ${
+                isActive("/blog")
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground hover:text-primary hover:bg-primary/5"
+              }`}
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>Blog</span>
+            </Link>
+            
+            <Link
+              to="/courses"
+              className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-smooth ${
+                isActive("/courses")
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground hover:text-primary hover:bg-primary/5"
+              }`}
+            >
+              <Calendar className="w-4 h-4" />
+              <span>Khóa học</span>
+            </Link>
           </nav>
 
           {/* Search & User */}
