@@ -16,6 +16,8 @@ import ExamManagement from "./pages/admin/ExamManagement";
 import UserManagement from "./pages/admin/UserManagement";
 import BlogManagement from "./pages/admin/BlogManagement";
 import ReportManagement from "./pages/admin/ReportManagement";
+import Auth from "./pages/Auth";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +42,8 @@ const App = () => (
           <Route path="/admin/users" element={<UserManagement />} />
           <Route path="/admin/blogs" element={<BlogManagement />} />
           <Route path="/admin/reports" element={<ReportManagement />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
